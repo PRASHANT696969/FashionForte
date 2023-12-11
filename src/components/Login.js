@@ -5,25 +5,34 @@ import Header from './Header';
 const Login = () => {
   return (
     <>
-     <Header/>
+    <div className='overflow-x-hidden '> 
+
+    
   <img 
-  className='z-10 absolute top-0 '
-   src="./imgs/login_FF.jpg" alt="img not found"  />
+  className='z-20 absolute top-0 overflow-x-hidden h-full w-[100%]'
+   src="./imgs/Login_page.jpg" alt="img not found"  />
    
-     <form className='absolute text z-50 w-1/2 flex flex-col mx-44 gap-16'>
-     <h1 className='text-[17px] font-serif '>LOG INTO YOUR ACCOUNT</h1>
-        <input type=" text" placeholder='Email address' className='p-2  w-[400px] bg-transparent border-b-4 ' />
+     <form className='absolute text z-30 w-1/2 flex flex-col   gap-14 left-1/3 top-[9rem] ml-[22rem] '>
+     <h1 className='text-[17px]  font-serif mt-[3rem]'>LOG INTO YOUR ACCOUNT</h1>
+     <div className=''>
+        <input type=" text" placeholder='Email address' className='p-2  w-[350px]  border-b-4 top-' />
             
-        <input type=" password" placeholder='Password' className='p-2 m-2 w-[400px] bg-transparent border-b-4' />
-        <button className='  w-[400px] font-serif border-2 p-2 hover:bg-white '>LOG IN</button>
-        <p className='text-[13px] font-sans my-[-45px] '> Have you forgotten your password?</p>
+        <input type=" password" placeholder='Password' className='p-2  w-[350px] bg-transparent border-b-4 mt-[2rem] flex' />
+        <button className=' rounded-lg bg-black text-white w-[350px] font-serif border-2 p-2 hover:bg-yellow-500 mt-[4rem] '>LOG IN</button>
+        </div>
+        
+        <div className=' cursor-pointer flex flex-row font-serif mt-[-3rem] gap-5 font-semibold text-sm tracking-wide'>
+         <p>Forgot Password?</p>
+         <p>Reset Password?</p>
+         </div>
+
+         <div className='font-serif  flex flex-row gap-24   w-[23rem] p-2 mt-[0.7rem]' >
+         <h2 className='uppercase'>Need An Account ? </h2>
+          <button className='  font-bold hover:text-yellow-700'> REGISTER</button>
+         </div>
      </form>
-
-     <div className='absolute z-40 left-[45%] space-y-6'>
-      <h2 className='text-[17px] font-serif'>NEED AN ACCOUNT?</h2>
-      <button className=' w-[250px] font-serif border-2 p-1 hover:bg-white'>REGISTER</button>
-
      </div>
+      
     </>
   )
 }
