@@ -16,16 +16,16 @@ const Login = () => {
   };
   return (
     <>
-      <div className="overflow-x-hidden ">
+      <div className="w-full h-full overflow-hidden ">
         <img
-          className="z-20 absolute top-0 overflow-x-hidden h-full w-[100%]"
+          className="z-20 absolute w-full h-full object-cover  "
           src="./imgs/Login_page.jpg"
           alt="img not found"
         />
 
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="absolute text z-30 w-1/2 flex flex-col   gap-14 left-1/3 top-[9rem] ml-[22rem] "
+          className="absolute text z-30  flex flex-col   gap-14 left-1/3 top-[9rem] ml-[22rem] "
         >
           <h1 className="text-[17px]  font-serif mt-[3rem]">
             LOG INTO YOUR ACCOUNT
