@@ -3,6 +3,7 @@ import Login from './Login'
 import Browse from './Browse'
 import { RouterProvider } from 'react-router-dom'
 import SignUp from './SignUp'
+import MenProduct from './MenProduct'
 
 const Body = () => {
 
@@ -18,8 +19,11 @@ const Body = () => {
             {
               path: "/SignUp",
               element : <SignUp/>,
+            },
+            {
+              path: "/MenProduct",
+              element : <MenProduct/>,
             }
-
     ])
 
   return (
