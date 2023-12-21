@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from './Navbar'
-import MenIteam from './MenIteam'
+import React from 'react';
+import Navbar from './Navbar';
+import MenIteam from './MenIteam';
 import Footer from './Footer';
 
 const MenProduct = () => {
@@ -8,10 +8,9 @@ const MenProduct = () => {
     <div>
       <Navbar />
       <MenIteam />
-      <Footer/>
-
+      <Footer />
     </div>
   );
 };
 
-export default MenProduct
+export default MenProduct;

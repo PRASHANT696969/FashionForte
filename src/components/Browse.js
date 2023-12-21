@@ -1,6 +1,9 @@
 import React from "react";
+import {  useNavigate } from "react-router-dom";
+
 
 const Browse = () => {
+  const Navigate = useNavigate()
   return (
     <>
       <div className="relative n">
@@ -9,29 +12,30 @@ const Browse = () => {
         </div> 
         <div className="absolute top-[-1rem] flex items-center justify-around w-full z-30">
           <div className="flex-shrink-0">
-            <img
+            <img 
               className=" h-64  filter invert w-max  ml-[-6rem]   -mt-9 shadow-sm cursor-pointer"
               src="./imgs/logo.png"
               alt="logo not loaded"
             />
           </div>
           <div className="flex-row gap-14 flex text-center text-4xl font-serif font-bold mt-32 ">
-            <h2 className=" hover:scale-x-125 hover:scale-y-125 text-gray-700  hover:text-gray-900   cursor-pointer transition-all ">
+            <h2 onClick={() => Navigate('MenProduct')} className=" hover:scale-x-125 hover:scale-y-125 text-gray-700  hover:text-gray-900   cursor-pointer transition-all ">
                           MEN
             </h2>
-            <h2 className="text-gray-700 hover:scale-x-125 hover:scale-y-125 hover:text-gray-900 cursor-pointer transition-all">
+            <h2 onClick={() => Navigate('WomenProduct')} className="text-gray-700 hover:scale-x-125 hover:scale-y-125 hover:text-gray-900 cursor-pointer transition-all">
                           WOMEN
             </h2>
           </div>
           <div className="flex-row gap-7 flex text-right text-white font-serif  ">
-            <p className=" hover:scale-x-110 cursor-pointer transition-all ">
+            <p onClick={() => Navigate ('Login')} className=" hover:scale-x-110 cursor-pointer transition-all ">
                           LOG IN 
             </p>
-            <p className=" hover:scale-x-110 cursor-pointer transition-all ">
+            <p onClick={() =>Navigate ('Cart')} className=" hover:scale-x-110 cursor-pointer transition-all ">
                           SHOPPING BAG (0)
             </p>
           </div>
         </div>
+
       </div>
     </>
   );
