@@ -2,6 +2,7 @@ import React from "react";
 import Validate from "../utils/Validate";
 import { useRef } from "react";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [errorMessage, setErrorMessage] = useState(null);
@@ -15,6 +16,7 @@ const Login = () => {
     setErrorMessage(message);
   };
   return (
+    
     <>
       <div className="w-full h-full overflow-hidden ">
         <img
@@ -59,11 +61,11 @@ const Login = () => {
           </div>
 
           <div className="font-serif  flex flex-row gap-24   w-[23rem] p-2">
-            <h2 className="uppercase ">Need An Account ? </h2>
-            <button className="  font-bold hover:text-orange-500">
+          <p className="uppercase ">Need An Account ? </p>
+            <Link to="/SignUp"  className="  font-bold hover:text-orange-500">
               {" "}
               REGISTER
-            </button>
+            </Link>
           </div>
         </form>
       </div>

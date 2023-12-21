@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useRef } from "react";
 import Validate from "../utils/Validate";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [errorMessage, setErrorMessage] = useState(null);
@@ -96,9 +97,9 @@ const SignUp = () => {
 
           <div className=" cursor-pointer flex flex-row font-serif mt-[-2rem] gap-7 font-semibold text-sm ">
             <p>Already a Customer?</p>
-            <button className=" font-extrabold underline text-[1rem] hover:text-orange-500 ">
+            <Link to = '/Login' className=" font-extrabold underline text-[1rem] hover:text-orange-500 ">
               Login
-            </button>
+            </Link>
           </div>
         </form>
       </div>

@@ -18,6 +18,9 @@ const Body = () => {
     { path: '/WomenProduct', element: <WomenProduct /> },
     { path: '/Help', element: <Help /> },
     { path: '/Cart', element: <Cart /> },
+    { path: '/SignUp', element: <SignUp /> },   
+    
+
   ]);
 
   return (
