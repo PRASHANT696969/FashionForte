@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Dropdown from './Dropdown';
+import Dropdown from './Dropdown'; // Import the logo image
 
 const Navbar = () => {
   return (
     <div className='flex flex-row justify-around items-center w-full z-50'>
       <Link to="/">
-        <img
-          className="h-52 w-max -ml-24 -mt-9 cursor-pointer"
-          src="./imgs/logo.png"
-          alt="logo not loaded"
-        />
+      <img 
+              className=" h-56   w-max  ml-[-6rem]   -mt-9  cursor-pointer"
+              src="./imgs/logo.png"
+              alt="logo not loaded"
+            />
       </Link>
       <input type="text" placeholder='SEARCH' className='text-center items-start p-1 rounded-md w-64 border border-black hover:border-zinc-600' />
       <div className="flex-row gap-7 flex text-right text-black font-serif">

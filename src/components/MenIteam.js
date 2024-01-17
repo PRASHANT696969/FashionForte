@@ -10,7 +10,7 @@ const MenIteam = () => {
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
-    navigate(`/product/${product.Id}`); // Use a dynamic route for each product
+    navigate(`/product/${product.Id}`);
   };
 
   return (
@@ -29,7 +29,9 @@ const MenIteam = () => {
           </button>
         </div>
       ))}
-      {selectedProduct && <Description product={selectedProduct} />}
+      {selectedProduct && (
+        <Description product={selectedProduct} />
+      )}
     </div>
   );
 };
